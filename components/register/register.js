@@ -28,7 +28,7 @@ export default function Register() {
 
         dispatch(
             registerThunk(values)).unwrap().then((res) => {
-               
+
                 setCookie('AToken', res?.data?.token, { path: '/', expires: new Date(Date.now() + 365 * 24 * 60 * 60 * 60 * 17) });
                 setCookie('AUser', res?.data?.user, { path: '/', expires: new Date(Date.now() + 365 * 24 * 60 * 60 * 60 * 17) });
                 window.location.href = "/dashboard"
@@ -69,8 +69,8 @@ export default function Register() {
 
                                             },
                                         ]}
-                                        validateStatus={apiErrors?.errors?.name && 'error'}
-                                        help={t(apiErrors?.errors?.name)}
+                                    // validateStatus={apiErrors?.errors?.name && 'error'}
+                                    // help={t(apiErrors?.errors?.name)}
                                     >
                                         <Input />
                                     </Form.Item>
@@ -95,8 +95,8 @@ export default function Register() {
 
                                             },
                                         ]}
-                                        validateStatus={apiErrors?.errors?.mobile && 'error'}
-                                        help={t(apiErrors?.errors?.mobile)}
+                                    // validateStatus={apiErrors?.errors?.mobile && 'error'}
+                                    // help={t(apiErrors?.errors?.mobile)}
                                     >
                                         <Input />
                                     </Form.Item>
@@ -118,8 +118,8 @@ export default function Register() {
 
                                             },
                                         ]}
-                                        validateStatus={apiErrors?.errors?.email && 'error'}
-                                        help={t(apiErrors?.errors?.email)}
+                                    // validateStatus={apiErrors?.errors?.email && 'error'}
+                                    // help={t(apiErrors?.errors?.email)}
                                     >
                                         <Input />
                                     </Form.Item>
@@ -138,8 +138,8 @@ export default function Register() {
                                                 message: 'هذا الحقل مطلوب.',
                                             },
                                         ]}
-                                        validateStatus={apiErrors?.errors?.password && 'error'}
-                                        help={t(apiErrors?.errors?.password)}
+                                    // validateStatus={apiErrors?.errors?.password && 'error'}
+                                    // help={t(apiErrors?.errors?.password)}
                                     >
                                         <Input.Password />
 

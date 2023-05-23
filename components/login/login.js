@@ -100,8 +100,8 @@ export default function Login() {
                                                                     message: 'هذا الحقل مطلوب.',
                                                                 }
                                                             ]}
-                                                            validateStatus={apiErrors?.errors?.email && 'error'}
-                                                            help={t(apiErrors?.errors?.email)}
+                                                        // validateStatus={apiErrors?.errors?.email && 'error'}
+                                                        // help={t(apiErrors?.errors?.email)}
                                                         >
                                                             <Input />
                                                         </Form.Item>
