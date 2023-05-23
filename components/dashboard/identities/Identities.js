@@ -19,7 +19,7 @@ const index = (props) => {
       <div>
         <Row gutter={[20, 20]}>
           {identities.map((id) => (
-            <Col xs={24} lg={12}>
+            <Col xs={24} lg={12} key={id}>
               <div className="idCard flex__">
                 <div className="idContent flex_">
                   <div className="idImg">
