@@ -1,0 +1,18 @@
+@import 'variables';
+
+.uploadMultiple :global {
+    
+    .ant-upload {
+        background: none;
+        border: none;
+        color: #999999;
+    }
+
+    .ant-upload-drag-icon {
+        font-size: 52px;
+        margin: 0px;
+    }
+    .ant-upload-text{
+        color: #999999!important
+    }
+}

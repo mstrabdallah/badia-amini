@@ -1,0 +1,208 @@
+.purchDocs :global {
+  .docsBox {
+    margin-bottom: 32px;
+
+    h3 {
+      font-size: 14px;
+      color: #979797;
+      margin-bottom: 13px;
+    }
+
+    .docs {
+      min-height: 97px;
+      border-radius: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .docsNoData {
+        background: #fff;
+        width: 100%;
+        padding: 27px;
+        border-radius: 10px;
+      }
+
+      p {
+        padding: 25px;
+        color: #979797;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px auto;
+      }
+    }
+  }
+}
+
+.doc :global {
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 37px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+
+  .docType {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    background-color: #f87575;
+    border-radius: 16px 0px 30px;
+    justify-content: center;
+    height: 44px;
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+  }
+
+  ul {
+    width: 45%;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+
+      span {
+        width: 48%;
+
+        &:first-of-type {
+          color: #aaaaaa;
+        }
+      }
+    }
+  }
+
+  .docInfo {
+    display: flex;
+    flex: 1;
+
+    .docImg {
+      width: 90px;
+      height: 90px;
+      border: 1px solid rgba(188, 188, 188, 0.26);
+      border-radius: 10px;
+      justify-content: center;
+    }
+
+    .docContent {
+      flex: 1;
+
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 5px;
+      }
+
+      div {
+        padding: 21px 0px;
+        justify-content: space-between;
+      }
+
+      div:not(:last-of-type) {
+        border-bottom: 1px solid rgba(170, 170, 170, 0.15);
+
+        ul {
+          justify-content: space-between;
+        }
+      }
+
+      margin: 0px 20px;
+
+      .docPerson {
+        ul {
+          width: 60%;
+
+          li {
+            margin-bottom: 9px;
+          }
+        }
+      }
+
+      .docCar {
+        ul li {
+          margin-bottom: 11px;
+        }
+
+        .brand {
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+
+      .docDates {
+        ul li {
+          margin-bottom: 13px;
+        }
+      }
+    }
+  }
+
+  .docPrice {
+    flex-basis: 200px;
+    text-align: center;
+    flex-direction: column;
+
+    .priceTitle,div {
+      padding: 5px 0px;
+    }
+
+    .priceTitle {
+      color: #aaa;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    div {
+      font-weight: 700;
+
+      span {
+        margin: 0px 4px;
+
+        &:first-of-type {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .expired {
+    background-color: #979797;
+  }
+
+  @media (max-width: 1400px) {
+    ul li {
+      flex-direction: column;
+
+      span {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 990px) {
+    div {
+      flex-direction: column;
+      align-items: unset;
+    }
+
+    .docType {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 776px) {
+    flex-direction: column;
+
+    ul {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "variables";
+
+.ButtonsS1 {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    height: 52px;
+    background: $c-p;
+    box-shadow: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    font-size: 16px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-top: 4px;
+    }
+
+    svg {
+      margin: 0px 10px;
+    }
+  }
+}
+
+.ButtonsAddS1 {
+  button {
+    border-radius: 14px;
+    padding: 23px 10px;
+    box-shadow: none;
+    border: none;
+    color: $c-s !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin: 0px 10px;
+    }
+  }
+}
+.switchBtn :global {
+  margin: 8px 0px;
+  .ant-switch {
+    width: 40px;
+    height: 19px;
+    transform: rotateY(180deg);
+    background-image: none;
+    background-color: #fff;
+    border: 0.5px solid #e5e5e5;
+    border-radius: 10px;
+    .ant-switch-handle {
+      top: -1px;
+      right: -1px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  p {
+    font-weight: 500;
+    margin: 0px 20px;
+  }
+}

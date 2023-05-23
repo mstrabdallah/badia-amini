@@ -1,0 +1,195 @@
+@import "variables";
+
+.cars :global {
+  .carBox {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    justify-content: space-between;
+
+    .carInfo {
+      flex: 1;
+
+      .carImg {
+        width: 126px;
+        height: 126px;
+        border: 1px solid rgba(188, 188, 188, 0.26);
+        border-radius: 10px;
+        justify-content: center;
+      }
+
+      .carData {
+        max-width: 300px;
+        margin: 0px 20px;
+
+        h3 {
+          margin: 20px 0px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        ul li {
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-weight: 500;
+
+          span:first-of-type {
+            color: #aaaaaa;
+          }
+        }
+      }
+    }
+
+    .carButtons {
+      li {
+        .carButtonsLi {
+          width: 36px;
+          height: 36px;
+          box-shadow: 0px 0px 5px rgba(151, 151, 151, 0.2);
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 10px 0px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.car :global {
+  .headP {
+    margin-bottom: 24px;
+
+    span {
+      width: 31px;
+      height: 31px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    h1 {
+      margin-bottom: 0px;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0px 16px;
+    }
+  }
+
+  .editCarInfoForm {
+    .sCarHead {
+      justify-content: space-between;
+
+      h2 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #979797;
+        margin-bottom: 0px;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        color: #d30606;
+        font-size: 16px;
+        font-weight: 500;
+
+        span {
+          text-decoration: underline;
+          text-underline-offset: 1px;
+        }
+      }
+    }
+
+    .sCarContent {
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 16px;
+      margin: 14px 0px 24px;
+
+      label {
+        color: #979797;
+        font-weight: normal;
+      }
+
+      .ant-select-selector,
+      .ant-input-number,
+      .ant-picker,
+      input {
+        border-radius: 6px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        color: $c-f-p;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .ant-select-selection-placeholder,
+      input::-webkit-input-placeholder {
+        color: $c-f-p;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .ant-picker-suffix,
+      .ant-select-arrow {
+        color: $c-f-p;
+      }
+
+      .ant-picker-suffix {
+        svg {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    .Buttons {
+      justify-content: flex-end;
+
+      .ignore {
+        color: #979797;
+        background: #ffffff;
+        border: 1.2px solid rgba(170, 170, 170, 0.47);
+        margin: 0px 20px;
+
+        &:hover {
+          color: $c-p;
+          border: 1.2px solid $c-p;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .cars :global {
+
+    .carBox,
+    .carInfo {
+      flex-direction: column;
+      text-align: center;
+
+      .carButtons {
+        display: flex;
+
+        li {
+          margin: 0px 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,329 @@
+@import "_variables";
+
+.antLayoutSiderPage :global {
+  height: 100vh;
+
+  .ant-layout-sider {
+    flex: 0 0 250px !important;
+    max-width: 250px !important;
+    min-width: 250px !important;
+    width: 250px !important;
+
+  }
+
+  .ant-layout-sider-children {
+    position: fixed;
+    background: #fff;
+    height: 100vh;
+    width: inherit;
+    overflow: hidden;
+  }
+
+  .ant-menu {
+    padding: 0px 20px;
+    height: 100vh;
+    overflow-x: scroll;
+    margin-top: 63px !important;
+
+  }
+
+  .antLayoutSider {
+    overflow: auto;
+    // flex: 0 0 200px !important;
+    // max-width: 250px !important;
+    // min-width: 250px !important;
+    // width: 250px !important;
+    background: #fff;
+
+    .logo {
+      text-align: center;
+      margin-top: 38px;
+    }
+
+    .icons {
+      background: #c2c1c1;
+      -webkit-mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    }
+
+    .MenuHomeIcon {
+      width: 23px;
+      height: 23px;
+      -webkit-mask-image: url(/icons/menuHome.svg);
+      mask-image: url(/icons/menuHome.svg);
+    }
+
+
+
+    .menuRecovery {
+      width: 22px;
+      height: 22px;
+      -webkit-mask-image: url(/icons/menuRecovery.svg);
+      mask-image: url(/icons/menuRecovery.svg);
+    }
+
+    .menuPurchasedDocs {
+      width: 22px;
+      height: 22px;
+      -webkit-mask-image: url(/icons/menuPurchasedDocs.svg);
+      mask-image: url(/icons/menuPurchasedDocs.svg);
+    }
+
+    .menuIds {
+      width: 22px;
+      height: 22px;
+      -webkit-mask-image: url(/icons/menuIds.svg);
+      mask-image: url(/icons/menuIds.svg);
+    }
+
+    .menuVehicles {
+      width: 23px;
+      height: 23px;
+      -webkit-mask-image: url(/icons/menuVehicles.svg);
+      mask-image: url(/icons/menuVehicles.svg);
+    }
+
+    .MenuSettingIcon {
+      width: 22px;
+      height: 22px;
+      -webkit-mask-image: url(/icons/menuSetting.svg);
+      mask-image: url(/icons/menuSetting.svg);
+    }
+
+    .MenuLogoutIcon {
+      width: 20px;
+      height: 20px;
+      -webkit-mask-image: url(/icons/logoutIcon.svg);
+      mask-image: url(/icons/logoutIcon.svg);
+    }
+
+    .menuStart {
+      width: 23px;
+      height: 23px;
+      -webkit-mask-image: url(/icons/menuStart.svg);
+      mask-image: url(/icons/menuStart.svg);
+    }
+
+    .ant-menu {
+      padding: 0px 20px;
+      margin-top: 22px;
+
+      li {
+        margin-top: 20px;
+      }
+    }
+
+    .ant-menu-item {
+      color: #c2c1c1;
+      padding-right: 20px;
+      padding-left: 20px;
+      border-radius: 14px 14px 14px 14px;
+    }
+
+    .ant-menu-item-icon {
+      font-size: 16px;
+    }
+
+    .ant-menu-inline .ant-menu-selected::after,
+    .ant-menu-inline .ant-menu-item-selected::after {
+      opacity: 0;
+    }
+
+    .ant-menu-title-content,
+    .ant-menu-submenu-arrow {
+      color: #c2c1c1;
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: $c-p;
+      color: #fff;
+      height: 50px;
+
+      .ant-menu-title-content {
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    .ant-menu-submenu-title {
+      padding-right: 20px;
+      padding-left: 20px;
+      border-radius: 14px 14px 14px 14px;
+    }
+
+    .ant-menu-item,
+    .ant-menu-submenu-title {
+      &:hover {
+        color: $c-p;
+
+        &::after,
+        &::before {
+          color: $c-p;
+        }
+      }
+    }
+
+    .ant-menu-submenu-selected {
+      .icons {
+        background: $c-p  !important;
+      }
+
+      .ant-menu-submenu-title {
+        color: $c-p;
+        font-weight: bold;
+
+        .ant-menu-submenu-arrow,
+        .ant-menu-title-content {
+          color: $c-p;
+        }
+
+        &:hover {
+          color: $c-p;
+
+          svg {
+            color: $c-p;
+          }
+
+          .ant-menu-submenu-arrow {
+            color: $c-p;
+          }
+        }
+      }
+    }
+
+    .ant-menu-submenu-open {
+      .ant-menu-submenu-title {
+        color: #fff;
+        background: $c-p;
+
+        &:hover {
+          svg {
+            color: #fff;
+          }
+
+          .ant-menu-submenu-arrow {
+            color: #fff;
+          }
+        }
+
+        .icons {
+          background: #fff;
+        }
+
+        .ant-menu-title-content,
+        .ant-menu-submenu-arrow {
+          color: #fff;
+        }
+      }
+    }
+
+    .ant-menu-submenu {
+      ul {
+        margin-top: 14px;
+      }
+
+      .ant-menu-item-only-child {
+        padding-right: 30px !important;
+      }
+
+      .ant-menu-sub {
+        background-color: #fff !important;
+      }
+
+      ul {
+        li {
+          margin-top: 0px;
+
+          .ant-menu-title-content {
+            color: #c2c1c1;
+          }
+        }
+      }
+
+      .ant-menu-item-selected {
+        background: none !important;
+
+        .ant-menu-title-content {
+          color: $c-p  !important;
+          font-size: 14px !important;
+        }
+      }
+
+      .ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child {}
+    }
+
+
+    .ant-menu-submenu-open {
+      .ant-menu-submenu-title {
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    .logoutBtn {
+      bottom: 100px;
+      right: 0;
+
+      button {
+        border: none;
+        box-shadow: none;
+        color: #c2c1c1;
+
+        &:lang(ar) {
+          margin-right: 22px;
+        }
+
+        .logoutText {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .ant-layout-sider-collapsed {
+    flex: 0 0 80px !important;
+    max-width: 80px !important;
+    min-width: 80px !important;
+    width: 80px !important;
+
+    .ant-menu {
+      padding: 0px 0px;
+
+    }
+
+
+    .ant-menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0px;
+    }
+
+    .ant-menu-title-content {
+      display: none !important;
+    }
+
+    .logo {
+      img {
+        margin-right: 17px;
+      }
+    }
+
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {}
+
+
+  }
+
+
+
+  .ant-menu-item.ant-menu-item-selected {
+    .icons {
+      background: #fff !important;
+    }
+
+  }
+
+}

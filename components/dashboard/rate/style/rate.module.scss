@@ -1,0 +1,60 @@
+.rateP :global {
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  p {
+    color: #979797;
+    font-size: 16px;
+    margin-bottom: 31px;
+  }
+  .rateForm {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 46px 29px;
+    display: flex;
+    flex-direction: column;
+    .ant-rate {
+      margin: 0px auto 28px;
+      color: #979797;
+
+      svg {
+        font-size: 44px;
+      }
+    }
+    label {
+      color: #979797;
+    }
+    textarea {
+      height: 215px;
+      resize: none;
+      border-radius: 6px;
+    }
+  }
+
+  .ButtonsS1{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    button{
+      height: 45px;
+      width: 140px;
+      border-radius: 10px;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .rateP :global {
+    .rateForm {
+      .ant-rate {
+        text-align: center;
+        svg {
+          font-size: 34px;
+        }
+      }
+      textarea {
+        height: 105px;
+      }
+    }
+  }
+}

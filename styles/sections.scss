@@ -1,0 +1,610 @@
+@import'_variables';
+
+.InsuranceChoose {
+    padding-top: 150px;
+    padding-bottom: 180px;
+
+    .slideItem {
+        border: 1px solid #f7f7f7a0;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .slide {
+        margin-top: 100px;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background: #FAFAFA;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30px;
+            height: 30px;
+
+            &::after {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.StepsToBuy {
+    background-color: #FAFAFA;
+    padding-top: 150px;
+    padding-bottom: 40px;
+
+    .StepsToBuyItem {
+        margin-top: 30px;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 20px;
+        min-height: 115px;
+
+
+        .Image {
+            flex: 0 1 125px;
+            box-shadow: 0px 10px 50px rgb(0 0 0 / 5%);
+            border-radius: 20px;
+            padding: 19px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            height: 111px;
+
+            img {
+                align-items: center;
+                width: 24px;
+            }
+        }
+
+        h3 {
+            flex: 0 1 100%;
+            text-align: center;
+        }
+
+
+
+    }
+
+    .ButtonsS1 {
+        padding: 20px;
+        margin-top: 75px;
+        margin-bottom: 20px;
+
+        button {
+            height: 51px;
+            width: 240px;
+        }
+    }
+
+}
+
+.WhyBuyFromOmni {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    .content {
+
+        .WhyBuyFromOmniItem {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 48px rgb(0 0 0 / 8%);
+            border-radius: 22px;
+            text-align: center;
+            margin-top: 90px;
+            padding: 25px;
+            min-height: 200px;
+            width: 100%;
+
+            .Image_ {
+                padding: 20px !important;
+                background: #E4E6E9;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                margin: auto;
+                margin-top: -64px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                color: $c-p;
+                margin-top: 28px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+.CustomerReviews {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background: #FAFAFA;
+
+    .child1 {
+        .wave_line {
+            border: 1px solid #19AAE1;
+            max-width: 160px;
+            margin-bottom: 80px;
+            margin-top: 90px;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 28px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .ButtonsS1 {
+            width: 100%;
+            margin-top: 70px;
+
+            button {
+                border-radius: 10px;
+                width: 263px;
+                height: 50px;
+            }
+        }
+    }
+
+    .child2 {
+        padding-top: 30px;
+
+        .comment {
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 15px 30px;
+            border-radius: 2px;
+
+            .user {
+                margin: 0 10px;
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .comment_content {
+                padding-top: 20px;
+                font-weight: 400;
+                font-size: 15px;
+                color: #979797;
+            }
+
+        }
+
+    }
+
+}
+
+.CommonQuestions {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .ant-collapse-borderless {
+        background-color: #ffffff;
+    }
+
+    .ant-collapse-header-text {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .ant-collapse-expand-icon {
+        display: none;
+    }
+
+    .ant-collapse-borderless>.ant-collapse-item {
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        margin-top: 60px;
+    }
+
+    svg {
+        font-size: 30px;
+        color: $c-p;
+    }
+}
+
+.StillHaveQuestions {
+    background: #fafafa;
+    padding-top: 60px;
+    min-height: auto;
+    padding-bottom: 40px;
+
+    .headSections {
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .content {
+        max-width: 900px;
+        margin: auto;
+        margin-top: 44px;
+
+        input,
+        textarea {
+            padding: 11px;
+            border-radius: 6px;
+            border: 1px solid $c-p;
+        }
+
+        .ButtonsS1_ {
+            align-items: center;
+            height: 100%;
+
+            button {
+                background: $c-p;
+                border-radius: 10px;
+                height: 45px;
+                margin-top: 9px;
+                min-width: 200px;
+
+                &:hover {
+                    background: #fff;
+                }
+
+            }
+        }
+    }
+}
+
+
+// model 
+
+.loginPageModel {
+
+    .ant-modal-content {
+        border-radius: 10px;
+    }
+
+    .ant-modal-body {
+        padding: 0px;
+    }
+
+    .ant-tabs-nav-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ant-tabs-nav-list {
+        width: 100%;
+    }
+
+    .ant-tabs-tab {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .ant-modal-content {
+        position: unset;
+    }
+
+    .ant-modal-close {
+        position: absolute;
+        bottom: 0px;
+        width: 52px;
+        height: 52px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        color: $c-p;
+    }
+
+    .ant-checkbox-wrapper {
+        color: $c-p;
+    }
+
+    .content {
+        max-width: 990px;
+        margin: auto;
+        margin-top: 60px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px rgb(209 213 223 / 50%);
+        border-radius: 20px;
+
+
+        &.tab1 {
+            .ant-tabs-tab-active {
+                border-radius: 0px 10px 0px 20px !important;
+            }
+        }
+
+        &.tab2 {
+            .ant-tabs-tab-active {
+                border-radius: 10px 0px 20px 0px !important;
+            }
+        }
+
+        .ant-tabs-nav-wrap {
+            overflow: visible;
+        }
+
+        .ant-tabs-nav-operations {
+            display: none;
+        }
+
+        .ant-tabs-nav {
+            &::before {
+                content: none;
+            }
+        }
+
+        .ant-tabs-tab {
+            border: none;
+            background: none;
+            height: 68px;
+            font-weight: 700;
+            font-size: 19px;
+
+
+
+            &.ant-tabs-tab-active {
+                box-shadow: 0px 10px 30px rgb(209 213 223 / 50%) !important;
+                background: $c-p;
+
+
+                .ant-tabs-tab-btn {
+                    color: #fff !important;
+
+                }
+            }
+        }
+
+        .TabPaneContent {
+            padding: 30px 40px;
+        }
+
+        .ButtonsS1_ {
+            .ButtonsS1 {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+                padding: 25px;
+                min-width: 230px;
+                margin-top: 17px;
+                margin-bottom: 10px;
+            }
+        }
+
+
+        .forget {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 21px;
+            font-weight: 700;
+            font-size: 15px;
+
+            a {
+                color: $c-p;
+            }
+        }
+
+    }
+}
+
+// loading
+.loadingPageS1 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.modelS1 {
+    padding: 20px;
+
+    .ant-modal-body {
+        padding: 20px;
+    }
+}
+
+// drawer
+
+.menuPageDrawer {
+    .menuPageHeader {
+        padding: 20px 41px;
+
+        .ButtonsS1 {
+            button {
+                width: 63px;
+                height: 39px;
+                padding: 0px;
+                background: #fffefe;
+                color: #121212;
+                border: 1px solid #121212;
+
+                svg {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+
+    .activeLi {
+        a {
+            background: #1ca9e1 !important;
+            color: #ffff !important;
+        }
+    }
+
+    .content {
+        margin-top: 40px;
+
+        ul {
+
+            li {
+
+
+                a {
+                    padding: 20px 35px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    background: #fbfbfb;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &.active {
+                    a {
+                        &::before {
+                            content: "";
+                            border-right: 9px solid $c-p;
+                            height: 100%;
+                            width: 20px;
+                            position: absolute;
+                            right: 0;
+                            border-radius: 7px;
+                        }
+                    }
+                }
+
+                .loginPage_ {
+                    .ButtonsS1 {
+                        width: 100%;
+
+                        button {
+                            width: 100%;
+                            margin-top: 29px;
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:991px) {
+
+    .indexPage_ {
+        .headSection {
+            .ant-row {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .headSection {
+
+
+        .image_ {
+            justify-content: center !important;
+        }
+
+
+        padding-top: 90px !important;
+        max-height: max-content !important;
+
+        .content {
+            h1 {
+                font-size: 3em !important;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                padding: 10px !important;
+                margin: 0px !important;
+                font-size: 1.7em !important;
+            }
+
+            .downIcon {
+                margin-top: 20px !important;
+                margin-bottom: 20px !important;
+                margin: auto;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width:1152px) {
+
+    .InsuranceCoverage {
+        .InsuranceCoverageItem {
+            margin: 11px;
+        }
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .InsuranceCoverage {
+        .InsuranceCoverageItem {
+            flex-direction: column;
+
+            .Image_ {
+                margin-right: 0px !important
+            }
+
+            .content_ {
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .CustomerReviews {
+        .ButtonsS1 {
+            width: 100%;
+
+            button {
+                margin: auto;
+                height: 47px;
+                width: 90%;
+            }
+        }
+
+        .child1 {
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+
+
+}

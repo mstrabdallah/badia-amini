@@ -1,0 +1,76 @@
+@import "variables";
+
+.settings :global {
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .settingsForm {
+    label {
+      color: #aaa;
+    }
+
+    input {
+      height: 42px;
+      border-radius: 6px;
+    }
+
+    input::-webkit-input-placeholder {
+      color: $c-f-p;
+    }
+  }
+
+  .settingsBox {
+    margin-bottom: 25px;
+
+    h3 {
+      font-size: 16px;
+      color: #979797;
+      font-weight: 700;
+    }
+
+    .settingsInputs {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 16px;
+
+      .switchBtn {
+        margin: 8px 0px;
+
+        .ant-switch {
+          width: 40px;
+          height: 19px;
+          transform: rotateY(180deg);
+          background-image: none;
+          background-color: #fff;
+          border: 0.5px solid #e5e5e5;
+          border-radius: 10px;
+
+          .ant-switch-handle {
+            top: -1px;
+            right: -1px;
+
+            &::before {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        p {
+          font-weight: 500;
+          margin: 0px 20px;
+        }
+      }
+    }
+  }
+
+  .ButtonsS1 {
+    button {
+      height: 45px;
+      width: 140px;
+      border-radius: 10px;
+    }
+  }
+}

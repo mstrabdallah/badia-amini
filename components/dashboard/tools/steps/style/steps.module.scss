@@ -1,0 +1,314 @@
+@import '_variables';
+
+.StepsStyles :global {
+
+
+  // antd 
+
+  .stepContent {
+    margin-top: 30px;
+  }
+
+  .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+    background-color: #f97475;
+  }
+
+
+
+  .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+    background-color: #e1e1e1;
+  }
+
+  .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+    background-color: #e1e1e1;
+  }
+
+  .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon {
+    background: #F87575;
+  }
+
+  .ant-steps-item-title::after {
+    background-color: #ECECEC;
+  }
+
+  .ant-steps-item-icon {
+    background: none;
+    border: 1px solid #F87575 !important;
+
+    .ant-steps-icon {
+      color: #444;
+    }
+  }
+
+  .ant-steps-item-finish .ant-steps-item-icon {
+    border: 1px solid #F87575 !important;
+    background: #f97475;
+
+    .ant-steps-icon {
+      color: #fff !important;
+    }
+  }
+
+  .stepHeader {
+    margin-top: 20px;
+    margin-bottom: 23px;
+
+    .title_ {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #979797;
+    }
+
+    button {
+      background: none;
+      border: none;
+      box-shadow: none;
+      color: $c-p;
+      padding: 0px;
+
+      span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        border-bottom: 1px solid;
+        padding-bottom: 3px;
+      }
+    }
+  }
+
+  .stepContents {
+    min-height: 100px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px;
+
+    .ant-radio-group {
+      width: 100%;
+    }
+
+    .ownerOfTheDocument {
+      margin-bottom: 30px;
+
+      .ant-radio-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .icon {
+        background: #F5F5F5;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 68px;
+        height: 57px;
+      }
+
+      label {
+        span:last-of-type {
+          width: 100%;
+        }
+      }
+
+      .ant-radio-inner {
+        width: 20px !important;
+        height: 20px;
+      }
+
+      .ant-radio-checked {
+        border-color: #f97475;
+      }
+
+      .title_ {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        background: #FFFFFF;
+        border: 1px solid rgba(170, 170, 170, 0.45);
+        border-radius: 20px;
+        padding: 20px;
+
+        h3 {
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 22px;
+        }
+
+        span {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+
+  .stepContents2 {
+    margin-top: 30px;
+  }
+
+  .stepsActionNext {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    margin-bottom: 70px;
+
+    button {
+      height: 40px;
+      min-width: 129px;
+    }
+  }
+
+  .VehicleInformation {
+    .title_ {
+      .image_ {
+        width: 189px;
+        height: 130px;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid rgba(188, 188, 188, 0.26);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .title_Content {
+      padding: 15px;
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .priceList {
+    margin-top: 40px;
+
+    .stepHeader {
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    .priceList_item {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      span {
+        padding: 0px 15px;
+        color: #979797;
+      }
+    }
+
+    .stepContents {
+      .price {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: fit-content;
+        font-weight: 700;
+        font-size: 16px;
+
+        span {
+          font-weight: 100;
+        }
+      }
+    }
+
+    .priceListPayItem {
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      .ant-radio-wrapper {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .details {
+      h2 {
+        border-bottom: 1px solid #eee;
+      }
+
+
+      .price {
+        color: $c-p;
+        margin: 0px 10px;
+      }
+
+      strong {
+        min-width: 220px;
+
+      }
+
+      .ant-row {
+        border-bottom: 1px solid #eee;
+        padding: 10px;
+
+        &:last-child {
+          border-bottom: none
+        }
+      }
+    }
+
+    .TermsAndConditions {
+      margin-top: 25px;
+    }
+  }
+
+  .fullInsurance {
+    .labelS1 {
+      padding-bottom: 21px;
+      display: block;
+    }
+
+    .fullInsuranceSec1 {
+      .ant-radio-group {
+        display: flex;
+        justify-content: space-between;
+        max-width: 364px;
+      }
+    }
+
+    .stepHeader {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .ant-table-thead>tr>th {
+      background: none;
+      border-bottom: none;
+    }
+
+    .ant-table-tbody>tr>td {
+      border-bottom: none;
+    }
+
+    .label__ {
+      width: 100%;
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 20px;
+      margin-top: 14px;
+    }
+
+    .vehiclevalue {
+      .ant-input-number {
+        height: 41px;
+        width: 211px;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        border-radius: 6px;
+      }
+
+      .ant-input-number-input-wrap {
+        height: 100%;
+
+        input {
+          height: 100%
+        }
+      }
+    }
+  }
+}

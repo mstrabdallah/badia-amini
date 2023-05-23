@@ -1,0 +1,93 @@
+@import 'variables';
+
+
+.indexPage :global {
+
+    .headSection {
+        max-height: calc($height - (160px));
+        // height: $height;
+        padding-top: 160px;
+
+        .content {
+
+            h1 {
+                font-weight: 500;
+                font-size: 50px;
+                line-height: 75px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 36px;
+                margin-top: 55px;
+            }
+
+            .downIcon {
+                background: $c-p;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 32px;
+                margin-top: 140px;
+                cursor: pointer;
+            }
+        }
+
+        .image_ {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -50px;
+
+        }
+    }
+
+    .TypeOfInsurance {
+        background-color: #FAFAFA;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+      
+
+        .TypeOfInsuranceItem {
+             width: 400px;
+            padding: 10px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 30px rgb(209 213 223 / 50%);
+            border-radius: 20px;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            .Image2 {
+                margin-top: -46px;
+            }
+
+            .Image {
+                margin-top: -62px;
+
+            }
+
+            .Image3 {
+                margin-top: -69px;
+            }
+            .Image4{
+                margin-top: -73px;
+            }
+
+            button {
+                border-radius: 10px;
+                height: 47px;
+                margin: 10px;
+                padding: 0px 23px;
+            }
+        }
+    }
+
+}

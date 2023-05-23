@@ -1,0 +1,91 @@
+@import 'variables';
+
+.footer :global {
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+
+    .ant-row {
+        width: 100%;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 50px 0;
+
+    }
+
+    .footerUl {
+        ul {
+            li {
+                margin-bottom: 20px;
+
+                a {
+
+                    font-weight: 500;
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+
+
+    .socail {
+        ul {
+            li {
+                margin: 0px 6px;
+
+                a {
+                    background: $c-p;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 21px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .cc {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    @media (max-width:991px) {
+        border-top: 1px solid #e7e4e4;
+
+        .logo {
+            justify-content: center;
+            display: flex;
+            margin-bottom: 35px;
+        }
+
+        .footerUl {
+            display: flex;
+            justify-content: center;
+        }
+
+        .socail {
+            justify-content: center;
+            display: flex;
+            margin-top: 28px;
+            border-top: 1px solid #ebebebaa;
+            padding-top: 26px;
+        }
+
+        .cc {
+            text-align: center;
+        }
+    }
+}

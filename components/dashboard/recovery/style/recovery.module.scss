@@ -1,0 +1,133 @@
+@import "variables";
+
+.recoverDocs :global {
+  .recoverForm {
+    .formInputs {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      border-radius: 16px;
+      margin: 25px 0px;
+      overflow: hidden;
+
+      label,
+      h4 {
+        color: #979797;
+        font-weight: normal;
+      }
+
+      h4 {
+        margin-bottom: 4px;
+      }
+
+      .ant-select-selector,
+      .ant-input-number {
+        border-radius: 6px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+        ::-webkit-input-placeholder {
+          color: $c-f-p;
+        }
+      }
+
+      .selectors {
+        flex-wrap: wrap;
+
+        .ant-select {
+          width: 94px;
+          padding: 4px;
+        }
+
+        .spSelect {
+          width: 135px;
+        }
+      }
+
+      .ant-select-arrow {
+        color: $c-f-p;
+      }
+
+      .ant-input-number {
+        width: 100%;
+      }
+    }
+
+    .agreeBtn {
+      display: flex;
+      margin-bottom: 100px;
+
+      input {
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #aaa;
+        border-radius: 2px;
+        position: relative;
+        outline: none;
+        cursor: pointer;
+        flex-shrink: 0;
+
+        &:checked {
+          background-color: #f87575;
+          border: 2px solid #f87575;
+
+          &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url("/icons/checked.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+
+      p {
+        margin: 0px 10px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .Button {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 100px;
+
+      button {
+        height: 50px;
+        background-color: #19aae1;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+
+  .ButtonsS1 {
+    button {
+      height: 46px;
+    }
+  }
+
+  @media (max-width: 1056px) {
+    .recoverForm .formInputs .selectors .spSelect {
+      width: 94px;
+    }
+  }
+
+  @media (max-width: 762px) {
+    .recoverForm .formInputs .selectors .ant-form-item {
+      width: 100%;
+
+      .ant-select {
+        width: 100%;
+      }
+    }
+  }
+}

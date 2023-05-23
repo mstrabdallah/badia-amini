@@ -1,0 +1,157 @@
+@import 'variables';
+
+
+.CarsInsurance :global {
+
+
+    .headSection {
+        padding-top: 120px;
+        padding-bottom: 130px;
+
+        .ant-tabs-nav-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ant-tabs-nav-list {
+            width: 100%;
+        }
+
+        .ant-tabs-tab {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .content {
+            max-width: 990px;
+            margin: auto;
+            margin-top: 60px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 30px rgb(209 213 223 / 50%);
+            border-radius: 20px;
+
+
+
+            .ant-tabs-nav-wrap {
+                overflow: visible;
+            }
+
+            .ant-tabs-nav-operations {
+                display: none;
+            }
+
+            .ant-tabs-nav {
+                &::before {
+                    content: none;
+                }
+            }
+
+            .ant-tabs-tab {
+                border: none;
+                background: none;
+                height: 68px;
+                font-weight: 700;
+                font-size: 19px;
+
+                &.ant-tabs-tab-active {
+                    box-shadow: 0px 10px 30px rgb(209 213 223 / 50%);
+                    border-radius: 0px 20px;
+
+                    .ant-tabs-tab-btn {
+                        color: #000;
+
+                    }
+                }
+            }
+
+            .TabPaneContent {
+                padding: 30px 40px;
+            }
+
+            .ButtonsS1_ {
+                button {
+                    padding: 25px;
+                    min-width: 230px;
+                    margin-top: 17px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+
+    }
+
+    .InsuranceChoose,
+    .WhyBuyFromOmni,
+    .CommonQuestions {
+        background-color: #FAFAFA;
+    }
+
+    .StepsToBuy,.CustomerReviews {
+        background-color: #fff;
+    }
+
+    .InsuranceCoverage {
+        padding-top: 80px;
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+            margin-top: 100px;
+
+            .InsuranceCoverageItem {
+                flex-direction: column;
+                background: #FFFFFF;
+                box-shadow: 0px 2px 48px rgb(0 0 0 / 8%);
+                border-radius: 22px;
+                padding: 20px;
+                text-align: center;
+                min-height: 367px;
+                margin-bottom: 100px;
+
+                .Image_ {
+                    margin: auto;
+                    margin-top: -64px;
+                    background: #E4E6E9;
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+
+
+                }
+
+                h3 {
+                    color: $c-p;
+                    text-align: center;
+                    margin-top: 24px;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+                p {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .CommonQuestions {
+        .ant-collapse-borderless {
+            background-color: #FAFAFA;
+        }
+        .ant-collapse-item {
+            border-bottom: 1px solid #FAFAFA;
+        }
+    }
+
+    .msg{
+        text-align: center;
+        color: #bd8e8e;
+    }
+}

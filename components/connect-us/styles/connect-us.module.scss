@@ -1,0 +1,49 @@
+@import 'variables';
+
+
+.ConnectUsPage :global {
+
+  
+    .ConnectUsItems {
+        margin-bottom: 120px;
+        margin-top: 160px;
+
+        .ConnectUsItem {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            h2 {
+                color: $c-p;
+                font-weight: 700;
+                font-size: 17px;
+                margin-top: 40px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            button {
+                border: 2px solid #19AAE1;
+                border-radius: 8px;
+                height: 44px;
+                min-width: 172px;
+                color: $c-p;
+                font-weight: bold;
+                svg{
+                    margin: 0px 6px;
+                }
+                &:hover{
+                    opacity: .5;
+                }
+            }
+
+            .footer_ {
+                color: $c-p;
+                font-weight: bold;
+            }
+        }
+    }
+}
